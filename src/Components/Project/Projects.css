@@ -1,0 +1,140 @@
+.card-main {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border: none;
+}
+
+.card-me-parent {
+  width: 70%;
+  background-color: white;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.card-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 50px 0;
+  background-color: white;
+}
+
+.card-screen-heading {
+  font-size: 32px;
+  color: #1f2235;
+  font-family: "Poppins Bold";
+}
+
+.card-screen-sub-heading {
+  letter-spacing: 3px;
+  margin: 8px 0 10px 0;
+  font-size: 12px;
+  color: var(--black);
+}
+
+
+.card-heading-seperator {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 180px;
+  margin: 10px 0 0 0;
+}
+
+.card-seperator-line {
+  width: 100%;
+  height: 2px;
+  background-color: #1f221f;
+}
+
+.card-seperator-blob {
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.card-seperator-blob div {
+  width: 35px;
+  border-radius: 10px;
+  background-color: var(--dark-orange);
+}
+
+
+.card-main-parent {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  border: none;
+}
+
+.card-bg {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0px 20px -2px #1f2235;
+  border-radius: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  border-radius: 8px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.flip-card-front img {
+  width: 250px;
+  height: 250px;
+}
+
+.flip-card-back {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  transform: rotateY(180deg);
+}
