@@ -5,18 +5,16 @@ function Project_data() {
   const fetch_data = async () => {
     await fetch("https://git-data-screape.herokuapp.com/")
       // await fetch("http://localhost:8000/")
-      .then((res) => {
-        {
-          return res.json();
-        }
+      .then(async(res) => {
+        return await res.json();
       })
       .then(async (data) => {
         await setData(data);
       });
   };
 
-  useEffect(async () => {
-    await fetch_data();
+  useEffect(() => {
+    fetch_data();
   }, []);
 
   return (

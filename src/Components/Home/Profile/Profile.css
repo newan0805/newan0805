@@ -106,7 +106,7 @@
     }
 
     .profile-details-role .primary-text {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .profile-options .btn {
@@ -122,6 +122,7 @@
         width: 320px;
         margin: 0 0 0 4px;
     }
+    
 }
 
 @media screen and (max-width: 810px) {
